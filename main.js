@@ -22,14 +22,14 @@ const todaysDate = `${month} ${day}, ${year}`
 let data = [
   [
     {
-      dateInfo: { month: "April", day: 2, year: 2020 },
-      date: "April 2, 2020",
+      dateInfo: { month: "April", day: 3, year: 2020 },
+      date: "April 3, 2020",
       state: "New York",
-      cases: 93053,
-      todayCases: 0,
-      deaths: 2538,
-      todayDeaths: 0,
-      active: 83081
+      cases: 102863,
+      todayCases: 9810,
+      deaths: 2935,
+      todayDeaths: 397,
+      active: 91042,
     },
     {
       state: "New Jersey",
@@ -37,15 +37,15 @@ let data = [
       todayCases: 0,
       deaths: 537,
       todayDeaths: 0,
-      active: 25053
+      active: 25053,
     },
     {
       state: "California",
-      cases: 11027,
-      todayCases: 189,
-      deaths: 239,
-      todayDeaths: 5,
-      active: 9938
+      cases: 11207,
+      todayCases: 369,
+      deaths: 246,
+      todayDeaths: 12,
+      active: 10111,
     },
     {
       state: "Michigan",
@@ -53,7 +53,15 @@ let data = [
       todayCases: 0,
       deaths: 417,
       todayDeaths: 0,
-      active: 10369
+      active: 10369,
+    },
+    {
+      state: "Florida",
+      cases: 9585,
+      todayCases: 577,
+      deaths: 163,
+      todayDeaths: 19,
+      active: 9422,
     },
     {
       state: "Louisiana",
@@ -61,15 +69,7 @@ let data = [
       todayCases: 0,
       deaths: 310,
       todayDeaths: 0,
-      active: 8820
-    },
-    {
-      state: "Florida",
-      cases: 9008,
-      todayCases: 0,
-      deaths: 144,
-      todayDeaths: 0,
-      active: 8864
+      active: 8820,
     },
     {
       state: "Massachusetts",
@@ -77,7 +77,15 @@ let data = [
       todayCases: 0,
       deaths: 154,
       todayDeaths: 0,
-      active: 8802
+      active: 8802,
+    },
+    {
+      state: "Pennsylvania",
+      cases: 8420,
+      todayCases: 1156,
+      deaths: 102,
+      todayDeaths: 12,
+      active: 8280,
     },
     {
       state: "Illinois",
@@ -85,15 +93,7 @@ let data = [
       todayCases: 0,
       deaths: 157,
       todayDeaths: 0,
-      active: 7536
-    },
-    {
-      state: "Pennsylvania",
-      cases: 7264,
-      todayCases: 0,
-      deaths: 90,
-      todayDeaths: 0,
-      active: 7136
+      active: 7536,
     },
     {
       state: "Washington",
@@ -101,23 +101,23 @@ let data = [
       todayCases: 0,
       deaths: 272,
       todayDeaths: 0,
-      active: 5750
+      active: 5750,
     },
     {
       state: "Georgia",
-      cases: 5348,
-      todayCases: 0,
-      deaths: 163,
-      todayDeaths: 0,
-      active: 5185
+      cases: 5831,
+      todayCases: 483,
+      deaths: 184,
+      todayDeaths: 21,
+      active: 5647,
     },
     {
       state: "Texas",
-      cases: 4823,
-      todayCases: 0,
-      deaths: 77,
-      todayDeaths: 0,
-      active: 4639
+      cases: 5221,
+      todayCases: 398,
+      deaths: 84,
+      todayDeaths: 7,
+      active: 5030,
     },
     {
       state: "Connecticut",
@@ -125,7 +125,7 @@ let data = [
       todayCases: 0,
       deaths: 112,
       todayDeaths: 0,
-      active: 3712
+      active: 3712,
     },
     {
       state: "Colorado",
@@ -133,7 +133,15 @@ let data = [
       todayCases: 0,
       deaths: 97,
       todayDeaths: 0,
-      active: 3631
+      active: 3631,
+    },
+    {
+      state: "Indiana",
+      cases: 3437,
+      todayCases: 398,
+      deaths: 102,
+      todayDeaths: 24,
+      active: 3335,
     },
     {
       state: "Tennessee",
@@ -141,15 +149,7 @@ let data = [
       todayCases: 0,
       deaths: 32,
       todayDeaths: 0,
-      active: 2942
-    },
-    {
-      state: "Indiana",
-      cases: 3039,
-      todayCases: 0,
-      deaths: 78,
-      todayDeaths: 0,
-      active: 2961
+      active: 2942,
     },
     {
       state: "Ohio",
@@ -157,23 +157,31 @@ let data = [
       todayCases: 0,
       deaths: 81,
       todayDeaths: 0,
-      active: 2821
+      active: 2821,
     },
     {
       state: "Maryland",
-      cases: 2331,
-      todayCases: 0,
-      deaths: 36,
-      todayDeaths: 0,
-      active: 2214
+      cases: 2758,
+      todayCases: 427,
+      deaths: 42,
+      todayDeaths: 6,
+      active: 2557,
     },
     {
       state: "North Carolina",
-      cases: 2023,
-      todayCases: 0,
-      deaths: 18,
-      todayDeaths: 0,
-      active: 1985
+      cases: 2093,
+      todayCases: 70,
+      deaths: 19,
+      todayDeaths: 1,
+      active: 2054,
+    },
+    {
+      state: "Virginia",
+      cases: 2012,
+      todayCases: 306,
+      deaths: 46,
+      todayDeaths: 5,
+      active: 1964,
     },
     {
       state: "Missouri",
@@ -181,7 +189,15 @@ let data = [
       todayCases: 0,
       deaths: 19,
       todayDeaths: 0,
-      active: 1813
+      active: 1813,
+    },
+    {
+      state: "Arizona",
+      cases: 1769,
+      todayCases: 171,
+      deaths: 41,
+      todayDeaths: 9,
+      active: 1725,
     },
     {
       state: "Wisconsin",
@@ -189,23 +205,7 @@ let data = [
       todayCases: 0,
       deaths: 38,
       todayDeaths: 0,
-      active: 1690
-    },
-    {
-      state: "Virginia",
-      cases: 1706,
-      todayCases: 0,
-      deaths: 41,
-      todayDeaths: 0,
-      active: 1663
-    },
-    {
-      state: "Arizona",
-      cases: 1598,
-      todayCases: 0,
-      deaths: 32,
-      todayDeaths: 0,
-      active: 1563
+      active: 1690,
     },
     {
       state: "South Carolina",
@@ -213,7 +213,7 @@ let data = [
       todayCases: 0,
       deaths: 31,
       todayDeaths: 0,
-      active: 1523
+      active: 1523,
     },
     {
       state: "Nevada",
@@ -221,23 +221,23 @@ let data = [
       todayCases: 0,
       deaths: 38,
       todayDeaths: 0,
-      active: 1420
-    },
-    {
-      state: "Alabama",
-      cases: 1261,
-      todayCases: 0,
-      deaths: 32,
-      todayDeaths: 0,
-      active: 1229
+      active: 1420,
     },
     {
       state: "Mississippi",
-      cases: 1177,
-      todayCases: 0,
-      deaths: 26,
+      cases: 1358,
+      todayCases: 181,
+      deaths: 29,
+      todayDeaths: 3,
+      active: 1329,
+    },
+    {
+      state: "Alabama",
+      cases: 1270,
+      todayCases: 9,
+      deaths: 32,
       todayDeaths: 0,
-      active: 1151
+      active: 1238,
     },
     {
       state: "Utah",
@@ -245,7 +245,15 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 1067
+      active: 1067,
+    },
+    {
+      state: "Oklahoma",
+      cases: 988,
+      todayCases: 109,
+      deaths: 38,
+      todayDeaths: 4,
+      active: 949,
     },
     {
       state: "Idaho",
@@ -253,15 +261,7 @@ let data = [
       todayCases: 0,
       deaths: 9,
       todayDeaths: 0,
-      active: 882
-    },
-    {
-      state: "Oklahoma",
-      cases: 879,
-      todayCases: 0,
-      deaths: 34,
-      todayDeaths: 0,
-      active: 844
+      active: 882,
     },
     {
       state: "Oregon",
@@ -269,7 +269,15 @@ let data = [
       todayCases: 0,
       deaths: 21,
       todayDeaths: 0,
-      active: 805
+      active: 805,
+    },
+    {
+      state: "Minnesota",
+      cases: 789,
+      todayCases: 47,
+      deaths: 22,
+      todayDeaths: 4,
+      active: 479,
     },
     {
       state: "Kentucky",
@@ -277,15 +285,23 @@ let data = [
       todayCases: 0,
       deaths: 31,
       todayDeaths: 0,
-      active: 675
+      active: 675,
     },
     {
-      state: "Minnesota",
-      cases: 742,
-      todayCases: 0,
-      deaths: 18,
+      state: "District Of Columbia",
+      cases: 757,
+      todayCases: 104,
+      deaths: 15,
+      todayDeaths: 3,
+      active: 569,
+    },
+    {
+      state: "Iowa",
+      cases: 699,
+      todayCases: 85,
+      deaths: 11,
       todayDeaths: 0,
-      active: 436
+      active: 670,
     },
     {
       state: "Arkansas",
@@ -293,7 +309,7 @@ let data = [
       todayCases: 0,
       deaths: 12,
       todayDeaths: 0,
-      active: 621
+      active: 621,
     },
     {
       state: "Rhode Island",
@@ -301,23 +317,7 @@ let data = [
       todayCases: 0,
       deaths: 12,
       todayDeaths: 0,
-      active: 645
-    },
-    {
-      state: "District Of Columbia",
-      cases: 653,
-      todayCases: 0,
-      deaths: 12,
-      todayDeaths: 0,
-      active: 468
-    },
-    {
-      state: "Iowa",
-      cases: 614,
-      todayCases: 0,
-      deaths: 11,
-      todayDeaths: 0,
-      active: 585
+      active: 645,
     },
     {
       state: "Kansas",
@@ -325,7 +325,7 @@ let data = [
       todayCases: 0,
       deaths: 13,
       todayDeaths: 0,
-      active: 539
+      active: 539,
     },
     {
       state: "New Hampshire",
@@ -333,7 +333,15 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 383
+      active: 383,
+    },
+    {
+      state: "Maine",
+      cases: 432,
+      todayCases: 56,
+      deaths: 9,
+      todayDeaths: 2,
+      active: 310,
     },
     {
       state: "New Mexico",
@@ -341,7 +349,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 396
+      active: 396,
     },
     {
       state: "Delaware",
@@ -349,15 +357,7 @@ let data = [
       todayCases: 0,
       deaths: 12,
       todayDeaths: 0,
-      active: 332
-    },
-    {
-      state: "Maine",
-      cases: 376,
-      todayCases: 0,
-      deaths: 7,
-      todayDeaths: 0,
-      active: 275
+      active: 332,
     },
     {
       state: "Vermont",
@@ -365,7 +365,7 @@ let data = [
       todayCases: 0,
       deaths: 17,
       todayDeaths: 0,
-      active: 321
+      active: 321,
     },
     {
       state: "Hawaii",
@@ -373,7 +373,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 226
+      active: 226,
     },
     {
       state: "Nebraska",
@@ -381,7 +381,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 241
+      active: 241,
     },
     {
       state: "Montana",
@@ -389,7 +389,7 @@ let data = [
       todayCases: 14,
       deaths: 6,
       todayDeaths: 0,
-      active: 235
+      active: 235,
     },
     {
       state: "West Virginia",
@@ -397,7 +397,15 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 215
+      active: 215,
+    },
+    {
+      state: "North Dakota",
+      cases: 173,
+      todayCases: 14,
+      deaths: 3,
+      todayDeaths: 0,
+      active: 115,
     },
     {
       state: "South Dakota",
@@ -405,39 +413,31 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 106
-    },
-    {
-      state: "North Dakota",
-      cases: 159,
-      todayCases: 0,
-      deaths: 3,
-      todayDeaths: 0,
-      active: 113
+      active: 106,
     },
     {
       state: "Wyoming",
-      cases: 150,
-      todayCases: 0,
+      cases: 162,
+      todayCases: 12,
       deaths: 0,
       todayDeaths: 0,
-      active: 124
+      active: 136,
     },
     {
       state: "Alaska",
-      cases: 143,
-      todayCases: 0,
+      cases: 151,
+      todayCases: 8,
       deaths: 3,
       todayDeaths: 0,
-      active: 140
+      active: 148,
     },
     {
       state: "Guam",
       cases: 82,
       todayCases: 0,
-      deaths: 3,
-      todayDeaths: 0,
-      active: 72
+      deaths: 4,
+      todayDeaths: 1,
+      active: 71,
     },
     {
       state: "Northern Mariana Islands",
@@ -445,23 +445,23 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 7
+      active: 7,
     },
     {
       state: "Puerto Rico",
-      cases: 316,
-      todayCases: 0,
-      deaths: 12,
-      todayDeaths: 0,
-      active: 300
+      cases: 378,
+      todayCases: 62,
+      deaths: 15,
+      todayDeaths: 3,
+      active: 359,
     },
     {
       state: "United States Virgin Islands",
-      cases: 30,
-      todayCases: 0,
+      cases: 37,
+      todayCases: 7,
       deaths: 0,
       todayDeaths: 0,
-      active: 9
+      active: 8,
     },
     {
       state: "Wuhan Repatriated",
@@ -469,7 +469,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 3
+      active: 3,
     },
     {
       state: "Diamond Princess Cruise",
@@ -477,8 +477,468 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 46
-    }
+      active: 46,
+    },
+  ],
+  [
+    {
+      dateInfo: { month: "April", day: 2, year: 2020 },
+      date: "April 2, 2020",
+      state: "New York",
+      cases: 93053,
+      todayCases: 0,
+      deaths: 2538,
+      todayDeaths: 0,
+      active: 83081,
+    },
+    {
+      state: "New Jersey",
+      cases: 25590,
+      todayCases: 0,
+      deaths: 537,
+      todayDeaths: 0,
+      active: 25053,
+    },
+    {
+      state: "California",
+      cases: 11027,
+      todayCases: 189,
+      deaths: 239,
+      todayDeaths: 5,
+      active: 9938,
+    },
+    {
+      state: "Michigan",
+      cases: 10791,
+      todayCases: 0,
+      deaths: 417,
+      todayDeaths: 0,
+      active: 10369,
+    },
+    {
+      state: "Louisiana",
+      cases: 9150,
+      todayCases: 0,
+      deaths: 310,
+      todayDeaths: 0,
+      active: 8820,
+    },
+    {
+      state: "Florida",
+      cases: 9008,
+      todayCases: 0,
+      deaths: 144,
+      todayDeaths: 0,
+      active: 8864,
+    },
+    {
+      state: "Massachusetts",
+      cases: 8966,
+      todayCases: 0,
+      deaths: 154,
+      todayDeaths: 0,
+      active: 8802,
+    },
+    {
+      state: "Illinois",
+      cases: 7695,
+      todayCases: 0,
+      deaths: 157,
+      todayDeaths: 0,
+      active: 7536,
+    },
+    {
+      state: "Pennsylvania",
+      cases: 7264,
+      todayCases: 0,
+      deaths: 90,
+      todayDeaths: 0,
+      active: 7136,
+    },
+    {
+      state: "Washington",
+      cases: 6585,
+      todayCases: 0,
+      deaths: 272,
+      todayDeaths: 0,
+      active: 5750,
+    },
+    {
+      state: "Georgia",
+      cases: 5348,
+      todayCases: 0,
+      deaths: 163,
+      todayDeaths: 0,
+      active: 5185,
+    },
+    {
+      state: "Texas",
+      cases: 4823,
+      todayCases: 0,
+      deaths: 77,
+      todayDeaths: 0,
+      active: 4639,
+    },
+    {
+      state: "Connecticut",
+      cases: 3824,
+      todayCases: 0,
+      deaths: 112,
+      todayDeaths: 0,
+      active: 3712,
+    },
+    {
+      state: "Colorado",
+      cases: 3728,
+      todayCases: 0,
+      deaths: 97,
+      todayDeaths: 0,
+      active: 3631,
+    },
+    {
+      state: "Tennessee",
+      cases: 3194,
+      todayCases: 0,
+      deaths: 32,
+      todayDeaths: 0,
+      active: 2942,
+    },
+    {
+      state: "Indiana",
+      cases: 3039,
+      todayCases: 0,
+      deaths: 78,
+      todayDeaths: 0,
+      active: 2961,
+    },
+    {
+      state: "Ohio",
+      cases: 2902,
+      todayCases: 0,
+      deaths: 81,
+      todayDeaths: 0,
+      active: 2821,
+    },
+    {
+      state: "Maryland",
+      cases: 2331,
+      todayCases: 0,
+      deaths: 36,
+      todayDeaths: 0,
+      active: 2214,
+    },
+    {
+      state: "North Carolina",
+      cases: 2023,
+      todayCases: 0,
+      deaths: 18,
+      todayDeaths: 0,
+      active: 1985,
+    },
+    {
+      state: "Missouri",
+      cases: 1834,
+      todayCases: 0,
+      deaths: 19,
+      todayDeaths: 0,
+      active: 1813,
+    },
+    {
+      state: "Wisconsin",
+      cases: 1730,
+      todayCases: 0,
+      deaths: 38,
+      todayDeaths: 0,
+      active: 1690,
+    },
+    {
+      state: "Virginia",
+      cases: 1706,
+      todayCases: 0,
+      deaths: 41,
+      todayDeaths: 0,
+      active: 1663,
+    },
+    {
+      state: "Arizona",
+      cases: 1598,
+      todayCases: 0,
+      deaths: 32,
+      todayDeaths: 0,
+      active: 1563,
+    },
+    {
+      state: "South Carolina",
+      cases: 1554,
+      todayCases: 0,
+      deaths: 31,
+      todayDeaths: 0,
+      active: 1523,
+    },
+    {
+      state: "Nevada",
+      cases: 1458,
+      todayCases: 0,
+      deaths: 38,
+      todayDeaths: 0,
+      active: 1420,
+    },
+    {
+      state: "Alabama",
+      cases: 1261,
+      todayCases: 0,
+      deaths: 32,
+      todayDeaths: 0,
+      active: 1229,
+    },
+    {
+      state: "Mississippi",
+      cases: 1177,
+      todayCases: 0,
+      deaths: 26,
+      todayDeaths: 0,
+      active: 1151,
+    },
+    {
+      state: "Utah",
+      cases: 1074,
+      todayCases: 0,
+      deaths: 7,
+      todayDeaths: 0,
+      active: 1067,
+    },
+    {
+      state: "Idaho",
+      cases: 891,
+      todayCases: 0,
+      deaths: 9,
+      todayDeaths: 0,
+      active: 882,
+    },
+    {
+      state: "Oklahoma",
+      cases: 879,
+      todayCases: 0,
+      deaths: 34,
+      todayDeaths: 0,
+      active: 844,
+    },
+    {
+      state: "Oregon",
+      cases: 826,
+      todayCases: 0,
+      deaths: 21,
+      todayDeaths: 0,
+      active: 805,
+    },
+    {
+      state: "Kentucky",
+      cases: 770,
+      todayCases: 0,
+      deaths: 31,
+      todayDeaths: 0,
+      active: 675,
+    },
+    {
+      state: "Minnesota",
+      cases: 742,
+      todayCases: 0,
+      deaths: 18,
+      todayDeaths: 0,
+      active: 436,
+    },
+    {
+      state: "Arkansas",
+      cases: 683,
+      todayCases: 0,
+      deaths: 12,
+      todayDeaths: 0,
+      active: 621,
+    },
+    {
+      state: "Rhode Island",
+      cases: 657,
+      todayCases: 0,
+      deaths: 12,
+      todayDeaths: 0,
+      active: 645,
+    },
+    {
+      state: "District Of Columbia",
+      cases: 653,
+      todayCases: 0,
+      deaths: 12,
+      todayDeaths: 0,
+      active: 468,
+    },
+    {
+      state: "Iowa",
+      cases: 614,
+      todayCases: 0,
+      deaths: 11,
+      todayDeaths: 0,
+      active: 585,
+    },
+    {
+      state: "Kansas",
+      cases: 552,
+      todayCases: 0,
+      deaths: 13,
+      todayDeaths: 0,
+      active: 539,
+    },
+    {
+      state: "New Hampshire",
+      cases: 479,
+      todayCases: 0,
+      deaths: 5,
+      todayDeaths: 0,
+      active: 383,
+    },
+    {
+      state: "New Mexico",
+      cases: 403,
+      todayCases: 0,
+      deaths: 7,
+      todayDeaths: 0,
+      active: 396,
+    },
+    {
+      state: "Delaware",
+      cases: 393,
+      todayCases: 0,
+      deaths: 12,
+      todayDeaths: 0,
+      active: 332,
+    },
+    {
+      state: "Maine",
+      cases: 376,
+      todayCases: 0,
+      deaths: 7,
+      todayDeaths: 0,
+      active: 275,
+    },
+    {
+      state: "Vermont",
+      cases: 338,
+      todayCases: 0,
+      deaths: 17,
+      todayDeaths: 0,
+      active: 321,
+    },
+    {
+      state: "Hawaii",
+      cases: 285,
+      todayCases: 0,
+      deaths: 1,
+      todayDeaths: 0,
+      active: 226,
+    },
+    {
+      state: "Nebraska",
+      cases: 246,
+      todayCases: 0,
+      deaths: 5,
+      todayDeaths: 0,
+      active: 241,
+    },
+    {
+      state: "Montana",
+      cases: 241,
+      todayCases: 14,
+      deaths: 6,
+      todayDeaths: 0,
+      active: 235,
+    },
+    {
+      state: "West Virginia",
+      cases: 217,
+      todayCases: 0,
+      deaths: 2,
+      todayDeaths: 0,
+      active: 215,
+    },
+    {
+      state: "South Dakota",
+      cases: 165,
+      todayCases: 0,
+      deaths: 2,
+      todayDeaths: 0,
+      active: 106,
+    },
+    {
+      state: "North Dakota",
+      cases: 159,
+      todayCases: 0,
+      deaths: 3,
+      todayDeaths: 0,
+      active: 113,
+    },
+    {
+      state: "Wyoming",
+      cases: 150,
+      todayCases: 0,
+      deaths: 0,
+      todayDeaths: 0,
+      active: 124,
+    },
+    {
+      state: "Alaska",
+      cases: 143,
+      todayCases: 0,
+      deaths: 3,
+      todayDeaths: 0,
+      active: 140,
+    },
+    {
+      state: "Guam",
+      cases: 82,
+      todayCases: 0,
+      deaths: 3,
+      todayDeaths: 0,
+      active: 72,
+    },
+    {
+      state: "Northern Mariana Islands",
+      cases: 8,
+      todayCases: 0,
+      deaths: 1,
+      todayDeaths: 0,
+      active: 7,
+    },
+    {
+      state: "Puerto Rico",
+      cases: 316,
+      todayCases: 0,
+      deaths: 12,
+      todayDeaths: 0,
+      active: 300,
+    },
+    {
+      state: "United States Virgin Islands",
+      cases: 30,
+      todayCases: 0,
+      deaths: 0,
+      todayDeaths: 0,
+      active: 9,
+    },
+    {
+      state: "Wuhan Repatriated",
+      cases: 3,
+      todayCases: 0,
+      deaths: 0,
+      todayDeaths: 0,
+      active: 3,
+    },
+    {
+      state: "Diamond Princess Cruise",
+      cases: 46,
+      todayCases: 0,
+      deaths: 0,
+      todayDeaths: 0,
+      active: 46,
+    },
   ],
   [
     {
@@ -489,7 +949,7 @@ let data = [
       todayCases: 8470,
       deaths: 1550,
       todayDeaths: 208,
-      active: 69270
+      active: 69270,
     },
     {
       state: "New Jersey",
@@ -497,7 +957,7 @@ let data = [
       todayCases: 0,
       deaths: 198,
       todayDeaths: 0,
-      active: 16438
+      active: 16438,
     },
     {
       state: "California",
@@ -505,7 +965,7 @@ let data = [
       todayCases: 205,
       deaths: 149,
       todayDeaths: 4,
-      active: 7244
+      active: 7244,
     },
     {
       state: "Michigan",
@@ -513,7 +973,7 @@ let data = [
       todayCases: 0,
       deaths: 184,
       todayDeaths: 0,
-      active: 6309
+      active: 6309,
     },
     {
       state: "Florida",
@@ -521,7 +981,7 @@ let data = [
       todayCases: 634,
       deaths: 77,
       todayDeaths: 6,
-      active: 6261
+      active: 6261,
     },
     {
       state: "Massachusetts",
@@ -529,7 +989,7 @@ let data = [
       todayCases: 0,
       deaths: 56,
       todayDeaths: 0,
-      active: 5686
+      active: 5686,
     },
     {
       state: "Washington",
@@ -537,7 +997,7 @@ let data = [
       todayCases: 0,
       deaths: 210,
       todayDeaths: 0,
-      active: 4550
+      active: 4550,
     },
     {
       state: "Illinois",
@@ -545,7 +1005,7 @@ let data = [
       todayCases: 0,
       deaths: 73,
       todayDeaths: 0,
-      active: 4982
+      active: 4982,
     },
     {
       state: "Pennsylvania",
@@ -553,7 +1013,7 @@ let data = [
       todayCases: 689,
       deaths: 63,
       todayDeaths: 12,
-      active: 4780
+      active: 4780,
     },
     {
       state: "Louisiana",
@@ -561,7 +1021,7 @@ let data = [
       todayCases: 0,
       deaths: 185,
       todayDeaths: 0,
-      active: 3840
+      active: 3840,
     },
     {
       state: "Georgia",
@@ -569,7 +1029,7 @@ let data = [
       todayCases: 785,
       deaths: 108,
       todayDeaths: 6,
-      active: 3709
+      active: 3709,
     },
     {
       state: "Texas",
@@ -577,7 +1037,7 @@ let data = [
       todayCases: 280,
       deaths: 47,
       todayDeaths: 6,
-      active: 3032
+      active: 3032,
     },
     {
       state: "Colorado",
@@ -585,7 +1045,7 @@ let data = [
       todayCases: 0,
       deaths: 51,
       todayDeaths: 0,
-      active: 2576
+      active: 2576,
     },
     {
       state: "Connecticut",
@@ -593,7 +1053,7 @@ let data = [
       todayCases: 0,
       deaths: 36,
       todayDeaths: 0,
-      active: 2535
+      active: 2535,
     },
     {
       state: "Indiana",
@@ -601,7 +1061,7 @@ let data = [
       todayCases: 373,
       deaths: 49,
       todayDeaths: 14,
-      active: 2110
+      active: 2110,
     },
     {
       state: "Tennessee",
@@ -609,7 +1069,7 @@ let data = [
       todayCases: 98,
       deaths: 13,
       todayDeaths: 0,
-      active: 1961
+      active: 1961,
     },
     {
       state: "Ohio",
@@ -617,7 +1077,7 @@ let data = [
       todayCases: 0,
       deaths: 39,
       todayDeaths: 0,
-      active: 1894
+      active: 1894,
     },
     {
       state: "Maryland",
@@ -625,7 +1085,7 @@ let data = [
       todayCases: 247,
       deaths: 18,
       todayDeaths: 3,
-      active: 1589
+      active: 1589,
     },
     {
       state: "North Carolina",
@@ -633,7 +1093,7 @@ let data = [
       todayCases: 125,
       deaths: 8,
       todayDeaths: 1,
-      active: 1485
+      active: 1485,
     },
     {
       state: "Arizona",
@@ -641,7 +1101,7 @@ let data = [
       todayCases: 132,
       deaths: 24,
       todayDeaths: 4,
-      active: 1262
+      active: 1262,
     },
     {
       state: "Wisconsin",
@@ -649,7 +1109,7 @@ let data = [
       todayCases: 0,
       deaths: 23,
       todayDeaths: 0,
-      active: 1260
+      active: 1260,
     },
     {
       state: "Virginia",
@@ -657,7 +1117,7 @@ let data = [
       todayCases: 230,
       deaths: 27,
       todayDeaths: 2,
-      active: 1221
+      active: 1221,
     },
     {
       state: "Nevada",
@@ -665,7 +1125,7 @@ let data = [
       todayCases: 36,
       deaths: 17,
       todayDeaths: 2,
-      active: 1027
+      active: 1027,
     },
     {
       state: "Missouri",
@@ -673,7 +1133,7 @@ let data = [
       todayCases: 0,
       deaths: 13,
       todayDeaths: 0,
-      active: 1016
+      active: 1016,
     },
     {
       state: "Alabama",
@@ -681,7 +1141,7 @@ let data = [
       todayCases: 12,
       deaths: 11,
       todayDeaths: 0,
-      active: 936
+      active: 936,
     },
     {
       state: "Mississippi",
@@ -689,7 +1149,7 @@ let data = [
       todayCases: 90,
       deaths: 20,
       todayDeaths: 4,
-      active: 917
+      active: 917,
     },
     {
       state: "South Carolina",
@@ -697,7 +1157,7 @@ let data = [
       todayCases: 0,
       deaths: 18,
       todayDeaths: 0,
-      active: 907
+      active: 907,
     },
     {
       state: "Utah",
@@ -705,7 +1165,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 802
+      active: 802,
     },
     {
       state: "Minnesota",
@@ -713,7 +1173,7 @@ let data = [
       todayCases: 53,
       deaths: 12,
       todayDeaths: 2,
-      active: 483
+      active: 483,
     },
     {
       state: "Oregon",
@@ -721,7 +1181,7 @@ let data = [
       todayCases: 0,
       deaths: 16,
       todayDeaths: 0,
-      active: 590
+      active: 590,
     },
     {
       state: "Oklahoma",
@@ -729,7 +1189,7 @@ let data = [
       todayCases: 84,
       deaths: 23,
       todayDeaths: 6,
-      active: 541
+      active: 541,
     },
     {
       state: "Arkansas",
@@ -737,7 +1197,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 469
+      active: 469,
     },
     {
       state: "District Of Columbia",
@@ -745,7 +1205,7 @@ let data = [
       todayCases: 0,
       deaths: 9,
       todayDeaths: 0,
-      active: 435
+      active: 435,
     },
     {
       state: "Kentucky",
@@ -753,7 +1213,7 @@ let data = [
       todayCases: 0,
       deaths: 11,
       todayDeaths: 0,
-      active: 405
+      active: 405,
     },
     {
       state: "Iowa",
@@ -761,7 +1221,7 @@ let data = [
       todayCases: 0,
       deaths: 6,
       todayDeaths: 0,
-      active: 400
+      active: 400,
     },
     {
       state: "Idaho",
@@ -769,7 +1229,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 408
+      active: 408,
     },
     {
       state: "Rhode Island",
@@ -777,7 +1237,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 404
+      active: 404,
     },
     {
       state: "Kansas",
@@ -785,7 +1245,7 @@ let data = [
       todayCases: 0,
       deaths: 8,
       todayDeaths: 0,
-      active: 360
+      active: 360,
     },
     {
       state: "New Hampshire",
@@ -793,7 +1253,7 @@ let data = [
       todayCases: 0,
       deaths: 3,
       todayDeaths: 0,
-      active: 311
+      active: 311,
     },
     {
       state: "Maine",
@@ -801,7 +1261,7 @@ let data = [
       todayCases: 28,
       deaths: 5,
       todayDeaths: 2,
-      active: 230
+      active: 230,
     },
     {
       state: "Vermont",
@@ -809,7 +1269,7 @@ let data = [
       todayCases: 37,
       deaths: 13,
       todayDeaths: 1,
-      active: 280
+      active: 280,
     },
     {
       state: "New Mexico",
@@ -817,7 +1277,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 277
+      active: 277,
     },
     {
       state: "Delaware",
@@ -825,7 +1285,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 1,
-      active: 248
+      active: 248,
     },
     {
       state: "Hawaii",
@@ -833,7 +1293,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 204
+      active: 204,
     },
     {
       state: "Montana",
@@ -841,7 +1301,7 @@ let data = [
       todayCases: 14,
       deaths: 4,
       todayDeaths: 0,
-      active: 181
+      active: 181,
     },
     {
       state: "Nebraska",
@@ -849,7 +1309,7 @@ let data = [
       todayCases: 0,
       deaths: 3,
       todayDeaths: 1,
-      active: 150
+      active: 150,
     },
     {
       state: "West Virginia",
@@ -857,7 +1317,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 144
+      active: 144,
     },
     {
       state: "North Dakota",
@@ -865,7 +1325,7 @@ let data = [
       todayCases: 13,
       deaths: 3,
       todayDeaths: 1,
-      active: 94
+      active: 94,
     },
     {
       state: "Alaska",
@@ -873,7 +1333,7 @@ let data = [
       todayCases: 5,
       deaths: 3,
       todayDeaths: 1,
-      active: 116
+      active: 116,
     },
     {
       state: "Wyoming",
@@ -881,7 +1341,7 @@ let data = [
       todayCases: 14,
       deaths: 0,
       todayDeaths: 0,
-      active: 83
+      active: 83,
     },
     {
       state: "South Dakota",
@@ -889,7 +1349,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 66
+      active: 66,
     },
     {
       state: "Guam",
@@ -897,7 +1357,7 @@ let data = [
       todayCases: 11,
       deaths: 2,
       todayDeaths: 1,
-      active: 60
+      active: 60,
     },
     {
       state: "Northern Mariana Islands",
@@ -905,7 +1365,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 2
+      active: 2,
     },
     {
       state: "Puerto Rico",
@@ -913,7 +1373,7 @@ let data = [
       todayCases: 65,
       deaths: 8,
       todayDeaths: 2,
-      active: 227
+      active: 227,
     },
     {
       state: "United States Virgin Islands",
@@ -921,7 +1381,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 30
+      active: 30,
     },
     {
       state: "Wuhan Repatriated",
@@ -929,7 +1389,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 3
+      active: 3,
     },
     {
       state: "Diamond Princess Cruise",
@@ -937,8 +1397,8 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 46
-    }
+      active: 46,
+    },
   ],
   [
     {
@@ -949,7 +1409,7 @@ let data = [
       todayCases: 6120,
       deaths: 965,
       todayDeaths: 82,
-      active: 54976
+      active: 54976,
     },
     {
       state: "New Jersey",
@@ -957,7 +1417,7 @@ let data = [
       todayCases: 2262,
       deaths: 161,
       todayDeaths: 21,
-      active: 13225
+      active: 13225,
     },
     {
       state: "California",
@@ -965,7 +1425,7 @@ let data = [
       todayCases: 169,
       deaths: 123,
       todayDeaths: 4,
-      active: 5574
+      active: 5574,
     },
     {
       state: "Michigan",
@@ -973,7 +1433,7 @@ let data = [
       todayCases: 8,
       deaths: 111,
       todayDeaths: 0,
-      active: 4542
+      active: 4542,
     },
     {
       state: "Washington",
@@ -981,7 +1441,7 @@ let data = [
       todayCases: 0,
       deaths: 189,
       todayDeaths: 0,
-      active: 3825
+      active: 3825,
     },
     {
       state: "Massachusetts",
@@ -989,7 +1449,7 @@ let data = [
       todayCases: 0,
       deaths: 44,
       todayDeaths: 0,
-      active: 4212
+      active: 4212,
     },
     {
       state: "Florida",
@@ -997,7 +1457,7 @@ let data = [
       todayCases: 208,
       deaths: 56,
       todayDeaths: 0,
-      active: 4190
+      active: 4190,
     },
     {
       state: "Louisiana",
@@ -1005,7 +1465,7 @@ let data = [
       todayCases: 225,
       deaths: 151,
       todayDeaths: 14,
-      active: 3389
+      active: 3389,
     },
     {
       state: "Illinois",
@@ -1013,7 +1473,7 @@ let data = [
       todayCases: 0,
       deaths: 47,
       todayDeaths: 0,
-      active: 3442
+      active: 3442,
     },
     {
       state: "Pennsylvania",
@@ -1021,7 +1481,7 @@ let data = [
       todayCases: 668,
       deaths: 38,
       todayDeaths: 4,
-      active: 3381
+      active: 3381,
     },
     {
       state: "Georgia",
@@ -1029,7 +1489,7 @@ let data = [
       todayCases: 205,
       deaths: 80,
       todayDeaths: 1,
-      active: 2571
+      active: 2571,
     },
     {
       state: "Texas",
@@ -1037,7 +1497,7 @@ let data = [
       todayCases: 192,
       deaths: 34,
       todayDeaths: 4,
-      active: 2418
+      active: 2418,
     },
     {
       state: "Colorado",
@@ -1045,7 +1505,7 @@ let data = [
       todayCases: 0,
       deaths: 44,
       todayDeaths: 0,
-      active: 2017
+      active: 2017,
     },
     {
       state: "Connecticut",
@@ -1053,7 +1513,7 @@ let data = [
       todayCases: 0,
       deaths: 33,
       todayDeaths: 0,
-      active: 1491
+      active: 1491,
     },
     {
       state: "Indiana",
@@ -1061,7 +1521,7 @@ let data = [
       todayCases: 282,
       deaths: 32,
       todayDeaths: 1,
-      active: 1482
+      active: 1482,
     },
     {
       state: "Tennessee",
@@ -1069,7 +1529,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 1505
+      active: 1505,
     },
     {
       state: "Ohio",
@@ -1077,7 +1537,7 @@ let data = [
       todayCases: 0,
       deaths: 25,
       todayDeaths: 0,
-      active: 1381
+      active: 1381,
     },
     {
       state: "Maryland",
@@ -1085,7 +1545,7 @@ let data = [
       todayCases: 247,
       deaths: 10,
       todayDeaths: 5,
-      active: 1197
+      active: 1197,
     },
     {
       state: "North Carolina",
@@ -1093,7 +1553,7 @@ let data = [
       todayCases: 102,
       deaths: 6,
       todayDeaths: 2,
-      active: 1118
+      active: 1118,
     },
     {
       state: "Wisconsin",
@@ -1101,7 +1561,7 @@ let data = [
       todayCases: 70,
       deaths: 15,
       todayDeaths: 0,
-      active: 1042
+      active: 1042,
     },
     {
       state: "Arizona",
@@ -1109,7 +1569,7 @@ let data = [
       todayCases: 146,
       deaths: 17,
       todayDeaths: 2,
-      active: 899
+      active: 899,
     },
     {
       state: "Nevada",
@@ -1117,7 +1577,7 @@ let data = [
       todayCases: 269,
       deaths: 22,
       todayDeaths: 8,
-      active: 868
+      active: 868,
     },
     {
       state: "Virginia",
@@ -1125,7 +1585,7 @@ let data = [
       todayCases: 151,
       deaths: 22,
       todayDeaths: 5,
-      active: 866
+      active: 866,
     },
     {
       state: "Missouri",
@@ -1133,7 +1593,7 @@ let data = [
       todayCases: 0,
       deaths: 10,
       todayDeaths: 0,
-      active: 826
+      active: 826,
     },
     {
       state: "Alabama",
@@ -1141,7 +1601,7 @@ let data = [
       todayCases: 65,
       deaths: 4,
       todayDeaths: 0,
-      active: 763
+      active: 763,
     },
     {
       state: "Mississippi",
@@ -1149,7 +1609,7 @@ let data = [
       todayCases: 95,
       deaths: 14,
       todayDeaths: 1,
-      active: 744
+      active: 744,
     },
     {
       state: "South Carolina",
@@ -1157,7 +1617,7 @@ let data = [
       todayCases: 0,
       deaths: 15,
       todayDeaths: 0,
-      active: 645
+      active: 645,
     },
     {
       state: "Utah",
@@ -1165,7 +1625,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 600
+      active: 600,
     },
     {
       state: "Oregon",
@@ -1173,7 +1633,7 @@ let data = [
       todayCases: 69,
       deaths: 13,
       todayDeaths: 0,
-      active: 535
+      active: 535,
     },
     {
       state: "Minnesota",
@@ -1181,7 +1641,7 @@ let data = [
       todayCases: 62,
       deaths: 9,
       todayDeaths: 4,
-      active: 360
+      active: 360,
     },
     {
       state: "Oklahoma",
@@ -1189,7 +1649,7 @@ let data = [
       todayCases: 52,
       deaths: 16,
       todayDeaths: 1,
-      active: 412
+      active: 412,
     },
     {
       state: "Arkansas",
@@ -1197,7 +1657,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 378
+      active: 378,
     },
     {
       state: "Kentucky",
@@ -1205,7 +1665,7 @@ let data = [
       todayCases: 0,
       deaths: 8,
       todayDeaths: 0,
-      active: 322
+      active: 322,
     },
     {
       state: "District Of Columbia",
@@ -1213,7 +1673,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 1,
-      active: 286
+      active: 286,
     },
     {
       state: "Iowa",
@@ -1221,7 +1681,7 @@ let data = [
       todayCases: 38,
       deaths: 3,
       todayDeaths: 0,
-      active: 315
+      active: 315,
     },
     {
       state: "Rhode Island",
@@ -1229,7 +1689,7 @@ let data = [
       todayCases: 55,
       deaths: 3,
       todayDeaths: 1,
-      active: 291
+      active: 291,
     },
     {
       state: "Kansas",
@@ -1237,7 +1697,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 256
+      active: 256,
     },
     {
       state: "Idaho",
@@ -1245,7 +1705,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 257
+      active: 257,
     },
     {
       state: "Maine",
@@ -1253,7 +1713,7 @@ let data = [
       todayCases: 42,
       deaths: 1,
       todayDeaths: 0,
-      active: 236
+      active: 236,
     },
     {
       state: "Vermont",
@@ -1261,7 +1721,7 @@ let data = [
       todayCases: 24,
       deaths: 12,
       todayDeaths: 0,
-      active: 223
+      active: 223,
     },
     {
       state: "Delaware",
@@ -1269,7 +1729,7 @@ let data = [
       todayCases: 18,
       deaths: 6,
       todayDeaths: 1,
-      active: 217
+      active: 217,
     },
     {
       state: "New Hampshire",
@@ -1277,7 +1737,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 212
+      active: 212,
     },
     {
       state: "New Mexico",
@@ -1285,7 +1745,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 206
+      active: 206,
     },
     {
       state: "Montana",
@@ -1293,7 +1753,7 @@ let data = [
       todayCases: 25,
       deaths: 1,
       todayDeaths: 0,
-      active: 153
+      active: 153,
     },
     {
       state: "Hawaii",
@@ -1301,7 +1761,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 151
+      active: 151,
     },
     {
       state: "West Virginia",
@@ -1309,7 +1769,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 113
+      active: 113,
     },
     {
       state: "Nebraska",
@@ -1317,7 +1777,7 @@ let data = [
       todayCases: 12,
       deaths: 2,
       todayDeaths: 0,
-      active: 106
+      active: 106,
     },
     {
       state: "North Dakota",
@@ -1325,7 +1785,7 @@ let data = [
       todayCases: 15,
       deaths: 1,
       todayDeaths: 0,
-      active: 79
+      active: 79,
     },
     {
       state: "Wyoming",
@@ -1333,7 +1793,7 @@ let data = [
       todayCases: 2,
       deaths: 0,
       todayDeaths: 0,
-      active: 86
+      active: 86,
     },
     {
       state: "Alaska",
@@ -1341,7 +1801,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 83
+      active: 83,
     },
     {
       state: "South Dakota",
@@ -1349,7 +1809,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 41
+      active: 41,
     },
     {
       state: "Guam",
@@ -1357,7 +1817,7 @@ let data = [
       todayCases: 5,
       deaths: 1,
       todayDeaths: 0,
-      active: 48
+      active: 48,
     },
     {
       state: "Northern Mariana Islands",
@@ -1365,7 +1825,7 @@ let data = [
       todayCases: 2,
       deaths: 0,
       todayDeaths: 0,
-      active: 2
+      active: 2,
     },
     {
       state: "Puerto Rico",
@@ -1373,7 +1833,7 @@ let data = [
       todayCases: 27,
       deaths: 5,
       todayDeaths: 2,
-      active: 121
+      active: 121,
     },
     {
       state: "United States Virgin Islands",
@@ -1381,7 +1841,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 21
+      active: 21,
     },
     {
       state: "Wuhan Repatriated",
@@ -1389,7 +1849,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 3
+      active: 3,
     },
     {
       state: "Diamond Princess Cruise",
@@ -1397,8 +1857,8 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 46
-    }
+      active: 46,
+    },
   ],
   [
     {
@@ -1409,7 +1869,7 @@ let data = [
       todayCases: 62,
       deaths: 883,
       todayDeaths: 0,
-      active: 49846
+      active: 49846,
     },
     {
       state: "New Jersey",
@@ -1417,7 +1877,7 @@ let data = [
       todayCases: 0,
       deaths: 140,
       todayDeaths: 0,
-      active: 10984
+      active: 10984,
     },
     {
       state: "California",
@@ -1425,7 +1885,7 @@ let data = [
       todayCases: 134,
       deaths: 121,
       todayDeaths: 2,
-      active: 5541
+      active: 5541,
     },
     {
       state: "Michigan",
@@ -1433,7 +1893,7 @@ let data = [
       todayCases: 0,
       deaths: 111,
       todayDeaths: 0,
-      active: 4534
+      active: 4534,
     },
     {
       state: "Washington",
@@ -1441,7 +1901,7 @@ let data = [
       todayCases: 0,
       deaths: 189,
       todayDeaths: 0,
-      active: 3997
+      active: 3997,
     },
     {
       state: "Massachusetts",
@@ -1449,7 +1909,7 @@ let data = [
       todayCases: 0,
       deaths: 44,
       todayDeaths: 0,
-      active: 4212
+      active: 4212,
     },
     {
       state: "Florida",
@@ -1457,7 +1917,7 @@ let data = [
       todayCases: 0,
       deaths: 56,
       todayDeaths: 0,
-      active: 3982
+      active: 3982,
     },
     {
       state: "Illinois",
@@ -1465,7 +1925,7 @@ let data = [
       todayCases: 0,
       deaths: 47,
       todayDeaths: 0,
-      active: 3442
+      active: 3442,
     },
     {
       state: "Louisiana",
@@ -1473,7 +1933,7 @@ let data = [
       todayCases: 0,
       deaths: 137,
       todayDeaths: 0,
-      active: 3178
+      active: 3178,
     },
     {
       state: "Pennsylvania",
@@ -1481,7 +1941,7 @@ let data = [
       todayCases: 0,
       deaths: 34,
       todayDeaths: 0,
-      active: 2717
+      active: 2717,
     },
     {
       state: "Georgia",
@@ -1489,7 +1949,7 @@ let data = [
       todayCases: 0,
       deaths: 79,
       todayDeaths: 0,
-      active: 2367
+      active: 2367,
     },
     {
       state: "Texas",
@@ -1497,7 +1957,7 @@ let data = [
       todayCases: 0,
       deaths: 30,
       todayDeaths: 0,
-      active: 2288
+      active: 2288,
     },
     {
       state: "Colorado",
@@ -1505,7 +1965,7 @@ let data = [
       todayCases: 0,
       deaths: 44,
       todayDeaths: 0,
-      active: 2017
+      active: 2017,
     },
     {
       state: "Connecticut",
@@ -1513,7 +1973,7 @@ let data = [
       todayCases: 0,
       deaths: 33,
       todayDeaths: 0,
-      active: 1491
+      active: 1491,
     },
     {
       state: "Tennessee",
@@ -1521,7 +1981,7 @@ let data = [
       todayCases: 0,
       deaths: 7,
       todayDeaths: 0,
-      active: 1505
+      active: 1505,
     },
     {
       state: "Ohio",
@@ -1529,7 +1989,7 @@ let data = [
       todayCases: 0,
       deaths: 25,
       todayDeaths: 0,
-      active: 1381
+      active: 1381,
     },
     {
       state: "Indiana",
@@ -1537,7 +1997,7 @@ let data = [
       todayCases: 0,
       deaths: 31,
       todayDeaths: 0,
-      active: 1201
+      active: 1201,
     },
     {
       state: "North Carolina",
@@ -1545,7 +2005,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 1018
+      active: 1018,
     },
     {
       state: "Maryland",
@@ -1553,7 +2013,7 @@ let data = [
       todayCases: 0,
       deaths: 10,
       todayDeaths: 5,
-      active: 950
+      active: 950,
     },
     {
       state: "Wisconsin",
@@ -1561,7 +2021,7 @@ let data = [
       todayCases: 0,
       deaths: 15,
       todayDeaths: 0,
-      active: 972
+      active: 972,
     },
     {
       state: "Missouri",
@@ -1569,7 +2029,7 @@ let data = [
       todayCases: 0,
       deaths: 10,
       todayDeaths: 0,
-      active: 826
+      active: 826,
     },
     {
       state: "Arizona",
@@ -1577,7 +2037,7 @@ let data = [
       todayCases: 0,
       deaths: 15,
       todayDeaths: 0,
-      active: 755
+      active: 755,
     },
     {
       state: "Virginia",
@@ -1585,7 +2045,7 @@ let data = [
       todayCases: 0,
       deaths: 17,
       todayDeaths: 0,
-      active: 720
+      active: 720,
     },
     {
       state: "Alabama",
@@ -1593,7 +2053,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 698
+      active: 698,
     },
     {
       state: "Mississippi",
@@ -1601,7 +2061,7 @@ let data = [
       todayCases: 0,
       deaths: 13,
       todayDeaths: 0,
-      active: 650
+      active: 650,
     },
     {
       state: "South Carolina",
@@ -1609,7 +2069,7 @@ let data = [
       todayCases: 0,
       deaths: 15,
       todayDeaths: 0,
-      active: 645
+      active: 645,
     },
     {
       state: "Nevada",
@@ -1617,7 +2077,7 @@ let data = [
       todayCases: 0,
       deaths: 14,
       todayDeaths: 0,
-      active: 607
+      active: 607,
     },
     {
       state: "Utah",
@@ -1625,7 +2085,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 600
+      active: 600,
     },
     {
       state: "Oregon",
@@ -1633,7 +2093,7 @@ let data = [
       todayCases: 0,
       deaths: 13,
       todayDeaths: 0,
-      active: 466
+      active: 466,
     },
     {
       state: "Minnesota",
@@ -1641,7 +2101,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 302
+      active: 302,
     },
     {
       state: "Arkansas",
@@ -1649,7 +2109,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 378
+      active: 378,
     },
     {
       state: "Kentucky",
@@ -1657,7 +2117,7 @@ let data = [
       todayCases: 0,
       deaths: 8,
       todayDeaths: 0,
-      active: 384
+      active: 384,
     },
     {
       state: "Oklahoma",
@@ -1665,7 +2125,7 @@ let data = [
       todayCases: 0,
       deaths: 15,
       todayDeaths: 0,
-      active: 361
+      active: 361,
     },
     {
       state: "District Of Columbia",
@@ -1673,7 +2133,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 1,
-      active: 286
+      active: 286,
     },
     {
       state: "Iowa",
@@ -1681,7 +2141,7 @@ let data = [
       todayCases: 0,
       deaths: 3,
       todayDeaths: 0,
-      active: 277
+      active: 277,
     },
     {
       state: "Kansas",
@@ -1689,7 +2149,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 256
+      active: 256,
     },
     {
       state: "Idaho",
@@ -1697,7 +2157,7 @@ let data = [
       todayCases: 0,
       deaths: 4,
       todayDeaths: 0,
-      active: 257
+      active: 257,
     },
     {
       state: "Rhode Island",
@@ -1705,7 +2165,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 237
+      active: 237,
     },
     {
       state: "Delaware",
@@ -1713,7 +2173,7 @@ let data = [
       todayCases: 0,
       deaths: 5,
       todayDeaths: 0,
-      active: 200
+      active: 200,
     },
     {
       state: "New Hampshire",
@@ -1721,7 +2181,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 212
+      active: 212,
     },
     {
       state: "Vermont",
@@ -1729,7 +2189,7 @@ let data = [
       todayCases: 0,
       deaths: 12,
       todayDeaths: 0,
-      active: 199
+      active: 199,
     },
     {
       state: "Maine",
@@ -1737,7 +2197,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 194
+      active: 194,
     },
     {
       state: "New Mexico",
@@ -1745,7 +2205,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 206
+      active: 206,
     },
     {
       state: "Hawaii",
@@ -1753,7 +2213,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 151
+      active: 151,
     },
     {
       state: "Montana",
@@ -1761,7 +2221,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 128
+      active: 128,
     },
     {
       state: "West Virginia",
@@ -1769,7 +2229,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 112
+      active: 112,
     },
     {
       state: "Nebraska",
@@ -1777,7 +2237,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 94
+      active: 94,
     },
     {
       state: "Alaska",
@@ -1785,7 +2245,7 @@ let data = [
       todayCases: 0,
       deaths: 2,
       todayDeaths: 0,
-      active: 83
+      active: 83,
     },
     {
       state: "Wyoming",
@@ -1793,7 +2253,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 84
+      active: 84,
     },
     {
       state: "North Dakota",
@@ -1801,7 +2261,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 66
+      active: 66,
     },
     {
       state: "South Dakota",
@@ -1809,7 +2269,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 41
+      active: 41,
     },
     {
       state: "Guam",
@@ -1817,7 +2277,7 @@ let data = [
       todayCases: 0,
       deaths: 1,
       todayDeaths: 0,
-      active: 50
+      active: 50,
     },
     {
       state: "Northern Mariana Islands",
@@ -1825,7 +2285,7 @@ let data = [
       todayCases: 2,
       deaths: 0,
       todayDeaths: 0,
-      active: 2
+      active: 2,
     },
     {
       state: "Puerto Rico",
@@ -1833,7 +2293,7 @@ let data = [
       todayCases: 0,
       deaths: 3,
       todayDeaths: 0,
-      active: 96
+      active: 96,
     },
     {
       state: "United States Virgin Islands",
@@ -1841,7 +2301,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 21
+      active: 21,
     },
     {
       state: "Wuhan Repatriated",
@@ -1849,7 +2309,7 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 3
+      active: 3,
     },
     {
       state: "Diamond Princess Cruise",
@@ -1857,9 +2317,9 @@ let data = [
       todayCases: 0,
       deaths: 0,
       todayDeaths: 0,
-      active: 46
-    }
-  ]
+      active: 46,
+    },
+  ],
 ]
 
 // Check if data is up to date
@@ -1877,7 +2337,7 @@ let totalCases = 0
 let totalRecoveries = 0
 let totalDeaths = 0
 
-currentDataSet.forEach(x => {
+currentDataSet.forEach((x) => {
   totalCases += x.cases
   totalRecoveries += x.cases - x.active
   totalDeaths += x.deaths
@@ -1918,7 +2378,7 @@ drawVisualization()
 
 // Zoom Slider
 
-zoomSlider.oninput = function() {
+zoomSlider.oninput = function () {
   // if (this.value % 2 === 0) {
   //   console.log(
   //     `A ${actuator} | H ${svgHeight} | D ${dateSlider.value} | Z ${zoomSlider.value}`
@@ -1936,7 +2396,7 @@ zoomSlider.oninput = function() {
 }
 
 // Date Slider
-dateSlider.oninput = function() {
+dateSlider.oninput = function () {
   // if (this.value % 2 === 0) {
   //   console.log(
   //     `A ${actuator} | H ${svgHeight} | D ${dateSlider.value} | Z ${zoomSlider.value}`
@@ -1959,7 +2419,7 @@ dateSlider.oninput = function() {
   totalRecoveries = 0
   totalDeaths = 0
 
-  currentDataSet.forEach(x => {
+  currentDataSet.forEach((x) => {
     totalCases += x.cases
     totalRecoveries += x.cases - x.active
     totalDeaths += x.deaths
@@ -2009,10 +2469,10 @@ function drawVisualization() {
     .attr("width", vw)
     .attr("height", svgHeight)
 
-  let deathData = currentDataSet.map(x => x.deaths / actuator)
-  let casesData = currentDataSet.map(x => x.cases / actuator)
-  let recoveredData = currentDataSet.map(x => (x.cases - x.active) / actuator)
-  let nameData = currentDataSet.map(x => x.state)
+  let deathData = currentDataSet.map((x) => x.deaths / actuator)
+  let casesData = currentDataSet.map((x) => x.cases / actuator)
+  let recoveredData = currentDataSet.map((x) => (x.cases - x.active) / actuator)
+  let nameData = currentDataSet.map((x) => x.state)
 
   let deathCircles = svg.selectAll("circle").data(deathData)
   let casesCircles = svg.selectAll("circle").data(casesData)
@@ -2032,7 +2492,7 @@ function drawVisualization() {
       radData.push(d)
       return (cum - d).toFixed(3)
     })
-    .attr("r", function(d) {
+    .attr("r", function (d) {
       return d.toFixed(3)
     })
     .attr("fill", "steelblue")
@@ -2044,7 +2504,7 @@ function drawVisualization() {
     .attr("cy", (d, i) => {
       return casesCumData[i].toFixed(3)
     })
-    .attr("r", function(d) {
+    .attr("r", function (d) {
       return d.toFixed(3)
     })
     .attr("fill", "rgb(255, 196, 0)")
@@ -2056,7 +2516,7 @@ function drawVisualization() {
     .attr("cy", (d, i) => {
       return casesCumData[i].toFixed(3)
     })
-    .attr("r", function(d) {
+    .attr("r", function (d) {
       return d.toFixed(3)
     })
     .attr("fill", "tomato")
@@ -2079,7 +2539,7 @@ function drawVisualization() {
         return (casesCumData[i] + radData[i] / 2).toFixed(1)
       }
     })
-    .text(function(d, i) {
+    .text(function (d, i) {
       return d
     })
     .attr("font-family", stateNameFont)
@@ -2106,10 +2566,10 @@ function drawVisualization() {
         }
       }
     })
-    .attr("id", function(d, i) {
+    .attr("id", function (d, i) {
       return "state_" + i
     })
-    .attr("class", function(d, i) {
+    .attr("class", function (d, i) {
       return "stateLink"
     })
 
@@ -2117,7 +2577,7 @@ function drawVisualization() {
   nameLabels
     .enter()
     .append("text")
-    .text(function(d, i) {
+    .text(function (d, i) {
       let displayCases = currentDataSet[i].cases
         .toString()
         .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
